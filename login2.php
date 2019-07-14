@@ -14,7 +14,17 @@ if ($el_usuario=="Juan") {
 	echo $json;
 
 
+
+
+}else if($el_usuario=="Antonio"){
+	$el_array->Nombre = "Antonio";
+	$el_array->Apellido = "Lopez";
+	$el_array->Edad = "40";
+	$json = json_encode($el_array);
+	echo $json;	
 }
+
+
 
 
 
