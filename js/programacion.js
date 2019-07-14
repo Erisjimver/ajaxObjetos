@@ -18,8 +18,16 @@ $(document).ready(function() {
 	
 	function procesarDatos(datos_devueltos){		
 		
-		$("#contenidos_externos").html("<p>"+datos_devueltos.Edad+"</p>");	
-					
+		
+		//$("#contenidos_externos").html("<p>"+datos_devueltos.Edad+"</p>");	
+		var informacion="<p>Nombre: "+datos_devueltos.Nombre+"</p>";
+
+		informacion+="<p>Apellido: "+datos_devueltos.Apellido+"</p>";	
+
+		informacion+="<p>Edad: "+datos_devueltos.Edad+"</p>";
+
+		$("#contenidos_externos").html(informacion);	
+
 	}
 	
 				
